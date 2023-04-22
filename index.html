@@ -23,7 +23,7 @@
                     <a href="#" class="menu_item">Магазин</a>
                     <a href="#" class="menu_item">Контакти</a>
                 </div>
-                <div class="m-menu">
+                <div class="m-menu_btn" onclick="mobileMenuOpen()">
                     <i class="bi bi-justify humburger"></i>
                 </div>
                 <div class="user-profil">
@@ -48,8 +48,8 @@
         </form>
     </div>
 
-    <div class="app-popup">
-        <i class="bi bi-x-lg popup-close"></i>
+    <div class="app-popup display-none"" id="appPopup" >
+        <i class="bi bi-x-lg popup-close" onclick="popupClose()"></i>
         <div class="popup_content">
             <p class="popup_title">Встановіть наш додаток</p>
             <div class="popup_btn">
@@ -58,6 +58,12 @@
         </div>
     </div>
 
+    <div class="m-menu display-none" id="mobileMenu">
+        <i class="bi bi-x-lg m-menu_close" onclick="mobileMenuClose()"></i>
+        <a href="" class="m-menu_item">Головна</a>
+        <a href="" class="m-menu_item">Магазин</a>
+        <a href="" class="m-menu_item">Контакти</a>
+    </div>
 
     <script src="./assets/scripts/main.js"></script>
 </body>
