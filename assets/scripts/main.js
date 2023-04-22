@@ -6,7 +6,9 @@ const popup = document.getElementById('appPopup');
 function isMobile() {
     if (navigator.userAgent.match(/Android|Mobile|IEMobile|Opera Mini|iPhone|iPad|iPod/i)==null) {
         popup.classList.remove('display-none')
-    } 
+    } else {
+        popup.classList.add('display-none')
+    }
 }
 isMobile();
 
