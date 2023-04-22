@@ -4,8 +4,8 @@ const mobMenu = document.getElementById('mobileMenu');
 const popup = document.getElementById('appPopup');
 
 function isMobile() {
-    if (navigator.userAgent.match(/Android|Mobile|IEMobile|Opera Mini|iPhone|iPad|iPod/i)==null) {
-        popup.classList.remove('display-none')
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
     } else {
         popup.classList.add('display-none')
     }
