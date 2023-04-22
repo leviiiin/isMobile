@@ -5,14 +5,16 @@ const popup = document.getElementById('appPopup');
 
 function isMobile() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
+        popup.classList.remove('display-none')
+        popup.classList.add('display-flex')
     } else {
-        popup.classList.add('display-none')
+        
     }
 }
 isMobile();
 
 function popupClose() {
+    popup.classList.remove('display-flex')
     popup.classList.add('display-none');
 }
 
